@@ -7,16 +7,23 @@ class Person{
         this.age=age;
     }
 
-    String 
+    String getName(){
+        return name;
+    }
+
+    int getAge(){
+        return age;
+    }
 
     void Display(){
-        System.out.println("Name "+name+" age "+age);
+        System.out.println("Name "+name);
+        System.out.println("Age "+age);
     }
 }
 
 class App{
     public static void main(String[] args){
     Person p1=new Person();
-    p1.Display("Ama", 22);    
+    p1.Display();    
     }
 }
