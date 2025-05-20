@@ -4,32 +4,32 @@ class BankAccount{
     double withdraw;
     double balance;
 
-}
+    void setDeposit(double deposit){
+        this.deposit=deposit;
+    }
 
-SetDeposit(double deposit){
-    this.deposit=deposit;
-}
+    void setWithdraw(double withdraw){
+        this.withdraw=withdraw;
+    }
 
-SetWithdraw(double withdraw){
-    this.withdraw=withdraw;
-}
+    void setBalance(double balance){
+        this.balance=balance;
+    }
 
-SetBalance(double balance){
-    this.balance=balance;
-}
+    double Deposit(){
+        
+        return deposit;
+    }
 
-int Deposit(){
-    
-    return deposit;
-}
+    double Withdraw(){
+        
+        return withdraw;
+    }
 
-int Withdraw(){
-    
-    return withdraw;
-}
+    void DisplayBalance(){
+        System.out.println("Your balance is "+ balance);
+    }
 
-void DisplayBalance(){
-    System.out.println("Your balance is "+ balance);
 }
 
 class App{
@@ -37,7 +37,7 @@ class App{
         BankAccount ba=new BankAccount();
         
         System.out.println("Your Deposit is Rs. "+ba.Deposit());
-        System.out.println("You have withdrawn Rs. "+ba.Withdraw);
+        System.out.println("You have withdrawn Rs. "+ba.Withdraw());
         ba.DisplayBalance();
     }
 }
