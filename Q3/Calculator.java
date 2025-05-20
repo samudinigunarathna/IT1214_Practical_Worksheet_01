@@ -14,6 +14,6 @@ class Calculator{
 class App{
     public static void main(String[] args){
         Calculator cal=new Calculator();
-        System.out.println(cal.Add());
+        System.out.println(cal.Add(8,9));   // Enter your values here
     }
 }
