@@ -10,6 +10,10 @@ class Employee{
 
         System.out.println(name+" "+id+" "+" "+salary);
     }
+
+    void DisplayDetails(){
+        
+    }
 }
 
 class Manager extends Employee{
